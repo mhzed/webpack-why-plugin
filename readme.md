@@ -1,7 +1,10 @@
 webpack-why-plugin
 -----------------------------------
 
-Print out why a particular module is included in webpack bundle.  'webpack-bundle-analyzer' allows you to look at the bundle in detail, but it doesn't tell you why a module is included in the bundle.
+Explain why a particular module is included in the webpack bundle by inspecting the dependency tree.
+
+The popular 'webpack-bundle-analyzer' allows you to look at the bundle in detail, but it doesn't tell you why a module is included in the bundle.
+
 
 Example output:
 
@@ -19,10 +22,9 @@ Example output:
 
 ## Install
 
-First add the module:
+First add the module in your project, using one of yarn or npm:
 
     # yarn add -D webpack-why-plugin
-    
     # npm i --dev webpack-why-plugin
 
 In "webpack.config.js", add these lines:
@@ -39,7 +41,7 @@ In "webpack.config.js", add these lines:
         ]
         // ...
       }
-      if (arg.why) {
+      if (arg.why) {  // --why
         config.plugins.push(new WebpackWhyPlugin({names: arg.why}));
       }
       return config;

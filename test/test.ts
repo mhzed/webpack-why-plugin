@@ -62,4 +62,10 @@ describe('test', function() {
     )).not.be.undefined();
   })
 
+  it('/ma/', async function() {
+    const lines = await why('/ma/');
+    should(lines.find(l=>
+      /ma\n/.test(l) && /pa\.js/.test(l)
+    )).not.be.undefined();
+  })
 });

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "private": true,
+  "private": false,
+  "repository": "mhzed/webpack-why-plugin",
   "devDependencies": {
     "@types/fs-extra": "^5.0.4",
     "@types/lodash": "^4.14.119",

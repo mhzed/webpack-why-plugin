@@ -1,0 +1,8 @@
+.nyc_output/
+*.map
+*.js
+coverage/
+node_modules/
+bower_components/
+dist/
+test/fixture/**/dist/

@@ -1,8 +1,4 @@
 .nyc_output/
-*.map
-index.js
-test/*.js
-src/*.js
 coverage/
 node_modules/
 bower_components/

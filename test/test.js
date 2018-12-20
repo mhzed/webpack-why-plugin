@@ -15,9 +15,6 @@ const __1 = require("..");
 const lodash_1 = require("lodash");
 const fs_extra_1 = require("fs-extra");
 const run = (config) => __awaiter(this, void 0, void 0, function* () {
-    if (!config.mode) {
-        config.mode = 'development';
-    }
     const outDir = path.resolve(__dirname, "fixture/p1/dist");
     yield fs_extra_1.emptyDir(outDir);
     const cfg = lodash_1.merge({

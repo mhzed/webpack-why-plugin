@@ -6,9 +6,6 @@ import { merge } from 'lodash';
 import { emptyDir } from 'fs-extra';
 
 const run = async(config: webpack.Configuration): Promise<webpack.Stats> => {
-  if (!config.mode) {
-    config.mode = 'development';
-  }
   const outDir = path.resolve(__dirname, "fixture/p1/dist");
   await emptyDir(outDir);
   const cfg: webpack.Configuration = merge({
